@@ -1,0 +1,16 @@
+# customcategory=plugin.tx_uploadwidgetexample=Upload Widget Example
+plugin.tx_uploadwidgetexample {
+	view {
+		# cat=plugin.tx_uploadwidgetexample/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:upload_widget_example/Resources/Private/Templates/
+		# cat=plugin.tx_uploadwidgetexample/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:upload_widget_example/Resources/Private/Partials/
+		# cat=plugin.tx_uploadwidgetexample/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:upload_widget_example/Resources/Private/Layouts/
+	}
+
+	persistence {
+		# cat=plugin.tx_uploadwidgetexample/settings; type=string; label=Default storage PID
+		storagePid = 1
+	}
+}

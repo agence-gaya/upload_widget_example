@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="main">
+
+	<f:form action="create" objectName="exampleForm" object="{exampleForm}" class="form">
+		<f:form.validationResults>
+			<f:if condition="{validationResults.subResults}">
+				<f:render partial="Form/Error" arguments="{errors: validationResults.subResults.candidature.errors}" />
+			</f:if>
+		</f:form.validationResults>
+
+		<f:render partial="Form/Input" arguments="{objectName: 'candidatureForm', field: 'firstname', required: 1}"></f:render>
+		<f:render partial="Form/Input" arguments="{objectName: 'candidatureForm', field: 'lastname', required: 1}"></f:render>
+		<f:render partial="Form/File" arguments="{objectName: 'candidatureForm', field: 'file', required: 1}"></f:render>
+
+		<div class="float-right">
+			<f:form.button class="btn btn-secondary"><span><f:translate key="form.send" /></span></f:form.button>
+		</div>
+	</f:form>
+
+	<p class="legal-info"><f:format.raw><f:translate key="rgpd" /></f:format.raw></p>
+
+</f:section>
+
+</html>

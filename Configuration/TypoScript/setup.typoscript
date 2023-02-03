@@ -1,0 +1,13 @@
+plugin.tx_uploadwidgetexample {
+	view {
+		templateRootPath = {$plugin.tx_uploadwidgetexample.view.templateRootPath}
+		partialRootPath = {$plugin.tx_uploadwidgetexample.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_uploadwidgetexample.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_uploadwidgetexample.persistence.storagePid}
+	}
+	settings {
+		uploadTypeNum = {$plugin.tx_uploadwidget.settings.uploadTypeNum}
+	}
+}

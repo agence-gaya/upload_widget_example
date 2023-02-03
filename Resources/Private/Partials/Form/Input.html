@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3Fluid/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:form.validationResults for="{objectName}.{field}">
+	<f:if condition="{validationResults.flattenedErrors}">
+		<f:variable name="class" value="{class} has-error" />
+	</f:if>
+	<f:if condition="{required}">
+		<f:variable name="class" value="{class} has-feedback" />
+	</f:if>
+
+	<div class="form-group {class}">
+		<label for="{field}"><f:translate key="{field}" default="{field}" /></label>
+
+		<f:form.textfield class="form-control" id="{field}" property="{field}" type="{f:if(condition: type, then: type, else: 'text')}" required="{required}" />
+
+		<f:render partial="Form/Error" arguments="{errors: validationResults.errors}" />
+	</div>
+
+</f:form.validationResults>
+
+</html>
