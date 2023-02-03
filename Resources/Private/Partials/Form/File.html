@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:uw="http://typo3.org/ns/GAYA/UploadWidget/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:form.validationResults for="{objectName}.{field}">
+	<f:if condition="{validationResults.flattenedErrors}">
+		<f:variable name="class" value="{class} has-error" />
+	</f:if>
+	<f:if condition="{required}">
+		<f:variable name="class" value="{class} has-feedback" />
+	</f:if>
+
+	<div class="form-group {class}">
+		<label for="{field}"><f:translate key="{field}" default="{field}" /></label>
+
+		<uw:form.upload property="{field}" id="{field}" class="form-control" />
+
+		<div class="help-block with-errors" aria-live="polite" id="{field}_error">
+			<ul class="list-unstyled">
+				<f:for each="{validationResults.errors}" as="error">
+					<li ><f:translate key="form.error.{error.code}" default="{error.message} (#{error.code})" arguments="{error.arguments}" /></li>
+				</f:for>
+			</ul>
+		</div>
+	</div>
+
+</f:form.validationResults>
+
+</html>

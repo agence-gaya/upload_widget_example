@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file t3:id="1663332442" source-language="en" datatype="plaintext">
+		<header/>
+		<body>
+			<trans-unit id="firstname">
+				<source>Firstname</source>
+			</trans-unit>
+			<trans-unit id="lastname">
+				<source>Lastname</source>
+			</trans-unit>
+			<trans-unit id="file">
+				<source>File</source>
+			</trans-unit>
+
+			<trans-unit id="form.send">
+				<source>Send</source>
+			</trans-unit>
+
+			<trans-unit id="form.error.1221560718">
+				<source>Veuillez remplir ce champ.</source>
+			</trans-unit>
+			<trans-unit id="form.error.1238108069">
+				<source>Veuillez saisir au maximum %d caractères.</source>
+			</trans-unit>
+			<trans-unit id="form.error.1221559976">
+				<source>Adresse email invalide.</source>
+			</trans-unit>
+			<trans-unit id="form.error.1519982125">
+				<source>Veuillez répondre au captcha.</source>
+			</trans-unit>
+			<trans-unit id="form.error.1663339886">
+				<source>Les adresses emails ne correspondent pas.</source>
+			</trans-unit>
+			<trans-unit id="form.error.1361959228">
+				<source>Veuillez cocher la case.</source>
+			</trans-unit>
+
+			<trans-unit id="confirmation_message">
+				<source>Thanks for using gaya/upload-widget extension. Don't hesitate to contribute.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

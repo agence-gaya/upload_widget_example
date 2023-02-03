@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file t3:id="1663332441" source-language="en" datatype="plaintext">
+		<header/>
+		<body>
+			<trans-unit id="example">
+				<source>Upload Widget example records</source>
+			</trans-unit>
+			<trans-unit id="firstname">
+				<source>Firstname</source>
+			</trans-unit>
+			<trans-unit id="lastname">
+				<source>Lastname</source>
+			</trans-unit>
+			<trans-unit id="file">
+				<source>File</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

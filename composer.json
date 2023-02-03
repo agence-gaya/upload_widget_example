@@ -1,0 +1,34 @@
+{
+  "name": "gaya/upload-widget-example",
+  "description": "Example of using gaya/upload-widget extension.",
+  "type": "typo3-cms-extension",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/agence-gaya/upload_widget_example",
+  "keywords": [
+    "TYPO3 CMS",
+    "Upload",
+    "Widget",
+    "File",
+    "FAL",
+    "Extbase",
+    "Example"
+  ],
+  "version": "1.0.0",
+  "require": {
+    "php": "^8.0",
+    "typo3/cms-core": "^11.5",
+    "typo3/cms-extbase": "^11.5",
+    "typo3/cms-fluid": "^11.5",
+    "gaya/upload-widget": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "GAYA\\UploadWidgetExample\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "upload_widget_example"
+    }
+  }
+}

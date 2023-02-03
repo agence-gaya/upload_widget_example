@@ -1,0 +1,9 @@
+<f:if condition="{errors}">
+	<div class="help-block with-errors" aria-live="polite">
+		<ul class="list-unstyled">
+			<f:for each="{errors}" as="error">
+				<li><f:translate key="form.error.{error.code}" default="{error.message} (#{error.code})" arguments="{error.arguments}" /></li>
+			</f:for>
+		</ul>
+	</div>
+</f:if>
